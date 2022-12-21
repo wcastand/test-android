@@ -1,0 +1,53 @@
+> Task :expo-modules-core:configureCMakeDebug[arm64-v8a] FAILED
+w: Detected multiple Kotlin daemon sessions at build/kotlin/sessions
+
+FAILURE: Build completed with 2 failures.
+
+1: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':expo-modules-core:configureCMakeDebug[arm64-v8a]'.
+> [CXX1405] exception while building Json A problem occurred starting process 'command '/Users/wcastand/Library/Android/sdk/cmake/3.18.1/bin/cmake''
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+==============================================================================
+
+2: Task failed with an exception.
+-----------
+* What went wrong:
+java.lang.StackOverflowError (no error message)
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+==============================================================================
+
+* Get more help at https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+Execution optimizations have been disabled for 1 invalid unit(s) of work during this build to ensure correctness.
+Please consult deprecation warnings for more details.
+
+BUILD FAILED in 3m 38s
+338 actionable tasks: 237 executed, 101 from cache
+Error: /Users/wcastand/Documents/test-android/android/gradlew exited with non-zero code: 1
+Error: /Users/wcastand/Documents/test-android/android/gradlew exited with non-zero code: 1
+    at ChildProcess.completionListener (/Users/wcastand/Documents/test-android/node_modules/@expo/spawn-async/build/spawnAsync.js:52:23)
+    at Object.onceWrapper (node:events:628:26)
+    at ChildProcess.emit (node:events:513:28)
+    at maybeClose (node:internal/child_process:1091:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:302:5)
+    ...
+    at Object.spawnAsync [as default] (/Users/wcastand/Documents/test-android/node_modules/@expo/spawn-async/build/spawnAsync.js:17:21)
+    at spawnGradleAsync (/Users/wcastand/Documents/test-android/node_modules/@expo/cli/build/src/start/platforms/android/gradle.js:72:46)
+    at Object.assembleAsync (/Users/wcastand/Documents/test-android/node_modules/@expo/cli/build/src/start/platforms/android/gradle.js:52:18)
+    at runAndroidAsync (/Users/wcastand/Documents/test-android/node_modules/@expo/cli/build/src/run/android/runAndroidAsync.js:31:24)
